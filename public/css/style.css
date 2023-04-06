@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #f8f9fa !important;
+}
+
+header {
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo,
+nav {
+    padding: 30px 80px;
+}
+
+.nav-link {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 15px;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 60px;
+}
+
+.banner {
+    background-image: url('./../img/banner2.png');
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.search-container input[type=text] {
+    background-color: #fff;
+    width: 500px;
+    padding-left: 50px;
+}
+
+.search-container input[type=submit] {
+    background-color: #009DFF;
+    border: none;
+    color: #fff;
+    width: 150px;
+    padding-left: 0 !important;
+}
+
+.search-icon {
+    position: absolute;
+    height: 25px;
+    margin: 27px;
+    margin-left: 30px;
+}
+
+section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 56px;
+    color: #1F1F1F;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+}
+
+.card {
+    width: calc((((100% - 100px) * 33) / 100) - 95px);
+    padding: 50px 50px 100px 50px;
+    background-color: #fff;
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 5%);
+    margin: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card:hover {
+    box-shadow: 0 25px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.hotel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.hotel-img {
+    height: 300px;
+    margin-right: 150px;
+}
+
+.hotel-details {
+    background-color: #fff;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.contact-banner {
+    background-image: url('./../img/contact.png');
+    height: 500px;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+input,
+textarea {
+    border: 1px solid #e5e6e9;
+    border-radius: 0px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+    margin: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid #009DFF;
+}
+
+.contact input {
+    width: calc(50% - 55px);
+}
+
+.contact textarea {
+    height: auto;
+    width: calc(100% - 60px);
+    resize: vertical;
+    max-height: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact input[type=submit] {
+    border: 1px solid #009DFF;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #009DFF;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: #009DFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-links-container{
+    margin-top: 50px;
+}
+
+.social-links{
+    height: 24px;
+    width: 24px;
+    margin: 15px 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 85px;
+    padding-bottom: 70px;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+block variables 
+doctype html 
+html 
+    head
+        meta(charset="utf-8")
+        title #{title} | Listee
+        block scripts 
+        link(rel="stylesheet", type="text/css", href="css/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+    body
+        header
+            img.logo(src="/img/listee.png", alt="Listee")
+            nav
+                a.nav-link(href="/") Home
+                a.nav-link(href="/contact") Contact
+        main
+            block main-content 
+        footer 
+            p &copy; Copyright, 2023

@@ -1,0 +1,26 @@
+extends layout 
+
+
+block main-content 
+    div.banner
+        h1.title Searching for a hotel 
+        form.search-container(method="post", action="/")
+            img.search-icon(src="img/search.png", alt="search")
+            input(type="text", name="city", placeholder="Enter city")
+            input(type="submit", value="Search")
+        h3 We are glad to help!
+    if hotelsList && hotelsList.status
+        section
+            h1.section-title Hotels
+            div.card-container
+                each h in hotelsList.data 
+                    if h.documentId 
+                        div.card(onclick=`openHotelDetails(${JSON.stringify(h)})`)
+                            h3 #{h.title.replaceAll(/(<([^>]+)>)/ig, "")}
+                            p #{h.secondaryText}
+    
+    script(type="text/javascript").
+        function openHotelDetails(hotel){
+            console.log("hotelObj ", hotel);
+            window.location.href = "/hotel?name="+hotel.title+"&location="+hotel.secondaryText;
+        }

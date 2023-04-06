@@ -1,0 +1,17 @@
+extends layout 
+
+
+block main-content 
+    div.banner.contact-banner
+        h1.title Get in touch
+    section.contact 
+        h3 Contact 
+        input(type="text", name="name", placeholder="Name")
+        input(type="text", name="email", placeholder="Email")
+        textarea(name="message", cols="30", rows="10", placeholder="Message")
+        input(type="submit", value="Send")
+        div.social-links-container
+            img.social-links(src="/img/facebook.png", alt="facebook")
+            img.social-links(src="/img/twitter.png", alt="twitter")
+            img.social-links(src="/img/instagram.png", alt="instagram")
+            img.social-links(src="/img/gmail.png", alt="gmail")

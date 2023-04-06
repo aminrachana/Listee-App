@@ -1,0 +1,18 @@
+extends layout 
+
+
+block main-content 
+    section.hotel-container 
+        img.hotel-img(src="./img/hotel.png", alt="hotel")
+        div.hotel-details
+            h3 #{name.replaceAll(/(<([^>]+)>)/ig, "")}
+            p #{location}
+
+    section
+        h1.section-title Attractions
+        div.card-container
+            each a in attractionsList.features 
+                if a.id
+                    div.card
+                        h3 #{a.properties.name}
+                        p #{a.properties.kinds.replace(",",", ").replaceAll("_", " ")}
